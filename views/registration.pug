@@ -1,0 +1,56 @@
+extends layout
+block content
+  script(src='/javascripts/app.js')
+
+  h1=title
+  form(method="POST"
+  id="reg_form"
+  )
+    label(for="name") Name:
+    input(
+      type="text"
+      id="name"
+      name="name"
+      class="form-control"
+      value=""
+    )
+    
+    br 
+    br
+    label(for="email") Email:
+    input(
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      value=""
+    )
+    
+    br 
+    br
+    label(for="password") Password:
+    input(
+      type="password"
+      id="password"
+      name="password"
+      class="form-control"
+      value=""
+    )
+    
+    br 
+    br
+    label(for="profile image") Profile Image:
+    input(
+      type="file"
+      id="image"
+      name="image"
+      class="form-control"
+      value=""
+    )
+    br 
+    br
+    input(
+    type="submit" value="Submit"
+    id="submit"
+    class="btn btn-lg btn-primary btn-block"
+    )
